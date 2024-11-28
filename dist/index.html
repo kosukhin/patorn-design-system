@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/vite.svg"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Vite App</title>
+    <script type="module" crossorigin src="/assets/index.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index.css">
+  </head>
+  <body>
+    <h1 class="ml-3 text-xl flex gap-2 items-center justify-center">
+      Заголовок
+    </h1>
+    <header class="text-gray-600 body-font">
+      <div
+        class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center menu"
+      >
+        <div
+          class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
+        >
+          <a
+            href="/"
+            class="ml-3 text-xl flex gap-2 items-center"
+          >
+            Patron
+          </a>
+        </div>
+        <nav
+          class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400 flex flex-wrap items-center text-base justify-center"
+        >
+          <a
+            class="mr-5 hover:text-gray-900"
+            href="/philosofy"
+            >Философия</a
+          >
+          <a
+            class="mr-5 hover:text-gray-900"
+            href="/guest"
+            >Guest</a
+          >
+          <a
+            class="mr-5 hover:text-gray-900"
+            href="/patron"
+            >Patron</a
+          >
+          <a
+            class="mr-5 hover:text-gray-900"
+            href="/source"
+            >Source</a
+          >
+        </nav>
+        <button
+          onclick="location.href='https://github.com/kosukhin/patron'"
+          class="inline-flex gap-1 items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0"
+        >
+          GitHub
+          <svg
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="w-4 h-4 ml-1"
+            viewBox="0 0 24 24"
+          >
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <h3 class="ml-3 text-xl flex gap-2 items-center justify-center">Статья</h3>
+
+    <article class="container mx-auto p-5">
+      <div class="loader">
+        <div class="w-full flex justify-center">
+          <div
+            class="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-e-transparent align-[-0.125em] text-indigo-500 motion-reduce:animate-[spin_1.5s_linear_infinite]"
+            role="status"
+          >
+            <span
+              class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+              >Loading...</span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="page-area"></div>
+    </article>
+
+    <h3 class="ml-3 text-xl flex gap-2 items-center justify-center">Футер</h3>
+
+    <footer class="text-gray-600 body-font mt-auto">
+      <div class="border-t border-gray-200">
+        <div class="container px-5 py-8 flex flex-wrap gap-6 mx-auto">
+          <div>
+            <h6
+              class="mb-4 flex flex-wrap justify-center font-semibold uppercase md:justify-start"
+            >
+              Интеграции
+            </h6>
+            <div class="flex flex-col gap-2 menu">
+              <a
+                class="flex gap-1 items-center"
+                href="/integrations/vue"
+              >
+                Vue
+              </a>
+              <a
+                class="flex gap-1 items-center"
+                href="/integrations/react"
+              >
+                React
+              </a>
+              <a
+                class="flex gap-1 items-center"
+                href="/integrations/angular"
+              >
+                Angular
+              </a>
+            </div>
+          </div>
+          <div>
+            <h6
+              class="mb-4 flex justify-center font-semibold uppercase md:justify-start"
+            >
+              Совместимость
+            </h6>
+            <div class="flex flex-col gap-2 menu">
+              <a
+                href="/compatibility/elegant-objects"
+                class="flex gap-1 items-center"
+              >
+                Elegant Objects
+              </a>
+            </div>
+          </div>
+          <div>
+            <h6
+              class="mb-4 flex justify-center font-semibold uppercase md:justify-start"
+            >
+              Дополнительно
+            </h6>
+            <div class="flex flex-col gap-2 menu">
+              <div class="flex gap-1 items-center">
+                <a href="/utils">Утилиты</a>
+              </div>
+              <div class="flex gap-1 items-center">
+                <a href="/terminology">Термины</a>
+              </div>
+              <div class="flex gap-1 items-center">
+                <a href="/examples">Примеры</a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h6
+              class="mb-4 flex justify-center font-semibold uppercase md:justify-start"
+            >
+              Библиотеки
+            </h6>
+            <div class="flex flex-col gap-2 menu">
+              <div class="flex gap-1 items-center">
+                <a
+                  href="https://kosukhin.github.io/patron-components.site/"
+                  target="_blank"
+                  >Patron-Компоненты</a
+                >
+              </div>
+              <div class="flex gap-1 items-center">
+                <a
+                  href="https://kosukhin.github.io/patron-web-api.site/"
+                  target="_blank"
+                  >Patron-WEB-API</a
+                >
+              </div>
+              <div class="flex gap-1 items-center">
+                <a
+                  href="https://kosukhin.github.io/patron-web-api.site/"
+                  target="_blank"
+                  >Patron Редактор схем</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-gray-100">
+        <div
+          class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row"
+        >
+          <p class="text-gray-500 text-sm text-center sm:text-left">
+            © 2024 Patron —
+            <a
+              href="https://github.com/kosukhin/patron"
+              class="text-gray-600 ml-1"
+              target="_blank"
+              rel="noopener noreferrer"
+              >@patron-oop</a
+            >
+          </p>
+          <span
+            class="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-gray-500 text-sm"
+          >
+            for responsible objects
+          </span>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
