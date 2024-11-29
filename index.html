@@ -340,6 +340,56 @@
       Patron: responsibility, respect, result.
     </h1>
 
+    <div class="example mb-4">
+      <span class="guest-result">
+        (
+        <input
+          type="number"
+          class="input-1"
+          style="
+            width: 60px;
+            background: rgba(255, 255, 255, 0.3);
+            border: solid 1px #eee;
+            color: #000;
+          "
+        />
+        +
+        <span class="eo-counter">25</span>
+        ) *
+        <input
+          type="number"
+          class="input-2"
+          style="
+            width: 60px;
+            background: rgba(255, 255, 255, 0.3);
+            border: solid 1px #eee;
+            color: #000;
+          "
+        />
+        = <span class="eo-result">26</span>
+      </span>
+      <div class="mt-4">
+        <button
+          onclick="window.numberTimer.stop()"
+          class="stop inline-flex gap-1 items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-black mt-4 md:mt-0"
+        >
+          Остановить
+        </button>
+        <button
+          onclick="window.numberTimer.start()"
+          class="begin inline-flex gap-1 items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-black mt-4 md:mt-0 opacity-20"
+        >
+          Запустить
+        </button>
+        <button
+          onclick="window.numberTimer.reset()"
+          class="inline-flex gap-1 items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-black mt-4 md:mt-0"
+        >
+          Сбросить
+        </button>
+      </div>
+    </div>
+
     <script
       type="module"
       src="/src/main.js"
